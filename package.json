@@ -1,0 +1,24 @@
+{
+  "name": "W4D4_Galgje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "jest": "^26.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/E-Koren/W4D5_Galgje.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/E-Koren/W4D5_Galgje/issues"
+  },
+  "homepage": "https://github.com/E-Koren/W4D5_Galgje#readme"
+}

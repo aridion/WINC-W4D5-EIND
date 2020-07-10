@@ -1,0 +1,126 @@
+.win,
+.lose {
+  display: none;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+.win {
+  animation-name: move-win;
+}
+
+@keyframes move-win {
+  0% {
+    background-color: green;
+    top: 120vh;
+  }
+  50% {
+    background-color: purple;
+    top: 0vh;
+  }
+  100% {
+    background-color: green;
+    top: 120vh;
+  }
+}
+
+.lose {
+  animation-name: move-lose;
+}
+
+@keyframes move-lose {
+  0% {
+    background-color: red;
+    top: 120vh;
+  }
+  50% {
+    background-color: yellow;
+    top: 0vh;
+  }
+  100% {
+    background-color: red;
+    top: 120vh;
+  }
+}
+.win h2 {
+  color: red;
+}
+
+.lose h2 {
+  color: blue;
+}
+
+/* ---- */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.guess,
+.restart {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+button:hover {
+  background-color: rgb(158, 231, 231);
+  color: black;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+input {
+  background-color: rgb(240, 240, 240);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+input:focus {
+  transform: scale(1.05);
+  transition: 0.3s ease-out;
+}
+
+.right-side {
+  text-align: right;
+}
+/* GRID */
+.container {
+  width: 50em;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "a a"
+    "b c";
+  grid-auto-rows: 100px;
+}
+
+#title {
+  grid-area: a;
+}
+
+.rightside {
+  grid-area: b;
+}
+
+.leftside {
+  grid-area: c;
+}
